@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>COMM 493 - TEAM 5</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mystyle.css') }}">
+    </head>
+    <body>
+        <h1>Product Recommendation</h1>
+        <p>In the fields below, search for either a product ID or customer ID and receive 6 recommended products to suggest to our
+             customers.
+        </p>
+        <div class='SearchBoxes'>
+            <div class="searchBoxOne">
+                <form action="http://localhost:5000/search-product" method="GET">
+                    <div>
+                        <label for="request-id">What product do you want to search for?</label>
+                        <input name="request-id" id="request-id" value="101010201">
+                    </div>
+                    <div>
+                        <button>Search Product</button>
+                    </div>
+                </form>
+            </div>
+            <div class="searchBoxTwo">
+                <form action="http://localhost:5000/search-customer" method="GET">
+                    <div>
+                        <label for="request-id">What customer do you want to search for?</label>
+                        <input name="request-id" id="request-id" value="9400009">
+                    </div>
+                    <div>
+                        <button>Search Customer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

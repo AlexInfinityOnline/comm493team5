@@ -127,9 +127,7 @@ algo2 = algoProdToProd()
 
 
 def test():
-
     print(mostRecent(9400009))
+
     print(prodReco(101010201))
     print(custReco(9400009))
-
-test()
